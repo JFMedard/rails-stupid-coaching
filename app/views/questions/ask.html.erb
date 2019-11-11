@@ -1,7 +1,12 @@
-<h1>Questions#ask</h1>
-<p>Find me in app/views/questions/ask.html.erb</p>
+<div class="container">
 
-<form action="/answer">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
-</form>
+
+  <div class="card mt-3">
+    <h1 class="text-align m-2">Ask a question</h1>
+    <form action="/answer" class="form-group m-2">
+      <input type="text" name="question" class="form-control">
+      <br>
+      <input type="submit" value="Ask!" class="btn btn-primary">
+    </form>
+  </div>
+</div>
