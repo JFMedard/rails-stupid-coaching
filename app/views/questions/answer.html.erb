@@ -1,0 +1,18 @@
+<h1>Questions#answer</h1>
+<p>Find me in app/views/questions/answer.html.erb</p>
+
+<p><%= "Hello, I am your coach, what did you want to tell me?" %></p>
+<!--
+<%= @answer %> -->
+
+<% if @answer.downcase == 'i am going to work' %>
+     <%= 'Great!' %>
+    <%  elsif @answer.end_with?('?') %>
+      <%= 'Silly question, get dressed and go to work!' %>
+    <% else %>
+      <%= "I don't care, get dressed and go to work!" %>
+    <% end %>
+
+<br>
+<br>
+<%= link_to "Other question", ask_path %>
